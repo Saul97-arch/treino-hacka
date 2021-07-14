@@ -15,7 +15,5 @@ export default {
   components: {
     
   },
-
-
 };
 </script>
