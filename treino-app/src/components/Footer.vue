@@ -1,11 +1,11 @@
 <template>
-  <v-footer dark padless>
-    <v-card class="flex" flat tile>
-      <v-card-title class="teal">
-        <strong class="subheading"
-          >Get connected with us on social networks!</strong
-        >
-
+  <v-footer color="teal yellow accent-4 mt-5">
+    <v-card class="flex" flat tile color="light-blue darken-4">
+      <v-card-title class="light-blue darken-4">
+        <strong class="subheading pokeyellow">
+          Tell me, Who is this Pokemon?
+        </strong>
+        
         <v-spacer></v-spacer>
 
         <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
@@ -16,7 +16,7 @@
       </v-card-title>
 
       <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Pokemon</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -30,3 +30,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  .pokeyellow {
+    color: 	#40C4FF;
+  }
+</style>

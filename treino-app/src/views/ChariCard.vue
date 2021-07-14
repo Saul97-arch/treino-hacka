@@ -1,14 +1,12 @@
 <template>
-    <v-parallax height="600" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+    <v-app v-if="PokeInfo.sprites">
       <v-img :src="PokeInfo.sprites.other['official-artwork'].front_default"></v-img>
-      
-      
       <ul>
-        <li>Name: {{PokeInfo.name}}</li>
-        <li>Weight: {{PokeInfo.weight}}Kg</li>
-        <li>Height: {{PokeInfo.height}}M</li>
+        <li><strong>Name:</strong> {{PokeInfo.name}}</li>
+        <li><strong>Weight:</strong> {{PokeInfo.weight}}Kg</li>
+        <li><strong>Height:</strong> {{PokeInfo.height}}M</li>
       </ul>
-    </v-parallax>
+    </v-app>
 </template>
 
 <script>
@@ -29,3 +27,18 @@
     }
   }
 </script>
+
+<style scoped>
+  ul li {
+    list-style: none;
+    color: #40C4FF;
+    text-shadow: 2px 2px 7px #01579B;
+    font-size: 19px;
+  }
+  ul {
+    background-color: #01579B;
+    border-top: 3px solid #FFD600;
+    border-bottom: 3px solid #FFD600;
+    border-left: 15px solid #FFD600;
+  }
+</style>
