@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Bulbasauro</h1>
+        <h1>Bulbassauro</h1>
     </div>
 </template>
