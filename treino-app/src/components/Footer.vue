@@ -2,7 +2,7 @@
   <v-footer color="teal yellow accent-4 mt-5">
     <v-card class="flex" flat tile color="light-blue darken-4">
       <v-card-title class="light-blue darken-4">
-        <strong class="subheading pokeyellow">
+        <strong class="subheading pokecolor">
           Tell me, Who is this Pokemon?
         </strong>
         
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-  .pokeyellow {
+  .pokecolor {
     color: 	#40C4FF;
   }
 </style>
